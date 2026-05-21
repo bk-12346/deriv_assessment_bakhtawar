@@ -127,9 +127,17 @@ def _select_evidence_sentences(
         )
     )
 
+    if not candidates:
+        return []
+
+    best_overlap = int(candidates[0]["overlap"])
+    focused_candidates = [
+        candidate for candidate in candidates if int(candidate["overlap"]) == best_overlap
+    ]
+
     return [
         {"doc_id": str(candidate["doc_id"]), "text": str(candidate["text"])}
-        for candidate in candidates[:MAX_EVIDENCE_SENTENCES]
+        for candidate in focused_candidates[:MAX_EVIDENCE_SENTENCES]
     ]
 
 

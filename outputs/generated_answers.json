@@ -1,6 +1,6 @@
 [
   {
-    "answer": "If a user no longer has access to their registered email, the case must be escalated to Account Security. Users who forget their password must verify their identity using their registered email address and a one-time verification code.",
+    "answer": "If a user no longer has access to their registered email, the case must be escalated to Account Security.",
     "citations": [
       "policy_001"
     ],
@@ -46,7 +46,7 @@
     "support_rating": "none"
   },
   {
-    "answer": "Chargeback threats must be escalated immediately to the Risk and Payments team. Refund requests must be reviewed by the Billing Operations team.",
+    "answer": "Chargeback threats must be escalated immediately to the Risk and Payments team.",
     "citations": [
       "policy_002"
     ],
@@ -57,7 +57,7 @@
     "support_rating": "partial"
   },
   {
-    "answer": "Files above 10 MB are rejected. If file upload fails, the user should first retry using a supported browser version and a stable network connection.",
+    "answer": "Files above 10 MB are rejected.",
     "citations": [
       "policy_003"
     ],

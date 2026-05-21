@@ -61,3 +61,19 @@ def run_pipeline() -> dict[str, object]:
         ],
         "artifacts": [str(outputs_dir / artifact) for artifact in artifacts],
     }
+
+
+def answer_adhoc_question(question_text: str) -> dict[str, object]:
+    """Answer one ad-hoc question using the same pipeline stages."""
+    run_pipeline()
+
+    documents = require_list(load_json(DOCUMENTS_PATH), "documents")
+    chunks = chunk_documents(documents)
+    index = build_tfidf_index(chunks)
+    question = {"question_id": "adhoc_1", "question": question_text}
+    retrieval_results = retrieve_for_questions(index, [question])
+    generated_answers = generate_answers(retrieval_results)
+    citation_validation = validate_citations(generated_answers, retrieval_results)
+    qa_results = make_final_decisions(generated_answers, citation_validation)
+
+    return qa_results[0]
