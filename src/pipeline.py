@@ -10,6 +10,7 @@ from src.evaluation import evaluate_results
 from src.generation import generate_answers
 from src.io_utils import ensure_outputs_dir, iso_timestamp, load_json, require_list, write_json
 from src.retrieval import build_tfidf_index, retrieve_for_questions
+from src.support_signals import build_support_signals
 
 
 def run_pipeline() -> dict[str, object]:
@@ -23,6 +24,7 @@ def run_pipeline() -> dict[str, object]:
         "citation_validation.json",
         "qa_results.json",
         "evaluation_summary.json",
+        "support_signals.json",
     ]
 
     documents = require_list(load_json(DOCUMENTS_PATH), "documents")
@@ -34,6 +36,7 @@ def run_pipeline() -> dict[str, object]:
     citation_validation = validate_citations(generated_answers, retrieval_results)
     qa_results = make_final_decisions(generated_answers, citation_validation)
     evaluation_summary = evaluate_results(questions, qa_results, citation_validation)
+    support_signals = build_support_signals(retrieval_results, qa_results)
 
     write_json(outputs_dir / "chunks.json", chunks)
     write_json(
@@ -49,6 +52,7 @@ def run_pipeline() -> dict[str, object]:
     write_json(outputs_dir / "citation_validation.json", citation_validation)
     write_json(outputs_dir / "qa_results.json", qa_results)
     write_json(outputs_dir / "evaluation_summary.json", evaluation_summary)
+    write_json(outputs_dir / "support_signals.json", support_signals)
 
     return {
         "document_count": len(documents),

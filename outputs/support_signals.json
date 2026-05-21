@@ -1,0 +1,62 @@
+[
+  {
+    "likely_answerable": true,
+    "notes": "Top retrieval score is clearly separated from the second result.",
+    "question_id": 1,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.5651285054591809,
+    "second_score": 0.10982103267908838,
+    "support_rating": "strong",
+    "top_score": 0.6749495381382693
+  },
+  {
+    "likely_answerable": true,
+    "notes": "Top retrieval score is clearly separated from the second result.",
+    "question_id": 2,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.2719860480683603,
+    "second_score": 0.0655329235435721,
+    "support_rating": "partial",
+    "top_score": 0.3375189716119324
+  },
+  {
+    "likely_answerable": true,
+    "notes": "Top retrieval score is clearly separated from the second result.",
+    "question_id": 3,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.3502765369513058,
+    "second_score": 0.07528814676901661,
+    "support_rating": "partial",
+    "top_score": 0.4255646837203224
+  },
+  {
+    "likely_answerable": false,
+    "notes": "Final status is insufficient_evidence; likely_answerable is false.",
+    "question_id": 4,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.12648583392383322,
+    "second_score": 0.11523816655126025,
+    "support_rating": "none",
+    "top_score": 0.2417240004750935
+  },
+  {
+    "likely_answerable": true,
+    "notes": "Top retrieval score is clearly separated from the second result.",
+    "question_id": 5,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.17298126599563635,
+    "second_score": 0.08639817740794119,
+    "support_rating": "partial",
+    "top_score": 0.25937944340357755
+  },
+  {
+    "likely_answerable": true,
+    "notes": "Retrieval support is present but score separation is limited.",
+    "question_id": 6,
+    "retrieved_chunk_count": 3,
+    "score_gap": 0.02169405247271866,
+    "second_score": 0.26267779163800875,
+    "support_rating": "partial",
+    "top_score": 0.2843718441107274
+  }
+]

@@ -32,6 +32,7 @@ def main() -> None:
     _validate_citation_validation(data["citation_validation"], data["retrieval_results"])
     _validate_final_results(data["qa_results"], data["citation_validation"])
     _validate_evaluation_summary(data["evaluation_summary"], data["questions"], data["qa_results"], data["citation_validation"])
+    _validate_support_signals_if_present(data["questions"])
 
     print("Validation passed.")
 
@@ -186,6 +187,28 @@ def _validate_evaluation_summary(
         sum(summary.get("expected_behavior_comparison", {}).values()) == len(questions),
         "expected behavior comparison is inconsistent.",
     )
+
+
+def _validate_support_signals_if_present(questions: list[dict[str, Any]]) -> None:
+    path = OUTPUTS_DIR / "support_signals.json"
+    if not path.exists():
+        return
+
+    records = require_list(load_json(path), "support_signals")
+    question_ids = {question.get("question_id") for question in questions}
+    signal_ids = {record.get("question_id") for record in records}
+    _require(signal_ids == question_ids, "support_signals does not process all questions.")
+
+    for record in records:
+        for field in ["top_score", "second_score", "score_gap"]:
+            _require(isinstance(record.get(field), (int, float)), f"{field} must be numeric.")
+        _require(
+            isinstance(record.get("retrieved_chunk_count"), int),
+            "retrieved_chunk_count must be an integer.",
+        )
+        _required_allowed(record, "support_rating", SUPPORT_RATINGS)
+        _require(isinstance(record.get("likely_answerable"), bool), "likely_answerable must be boolean.")
+        _require(isinstance(record.get("notes"), str), "support signal notes must be a string.")
 
 
 def _retrieved_doc_ids_by_question(retrieval_results: list[dict[str, Any]]) -> dict[Any, set[str]]:

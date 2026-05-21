@@ -19,6 +19,7 @@ pipeline, and inspect deterministic artifacts in `outputs/`.
 - Controlled vocabularies for statuses, support ratings, and routing actions
 - Citation validation against retrieved evidence
 - Safe fallback to `insufficient_evidence`
+- Optional lightweight support signals derived from retrieval scores and final outcomes
 
 ## Repository Structure
 
@@ -106,6 +107,7 @@ Artifacts are written to `outputs/`:
 - `citation_validation.json`
 - `qa_results.json`
 - `evaluation_summary.json`
+- `support_signals.json`
 
 ## Design Decisions
 
@@ -115,10 +117,12 @@ Artifacts are written to `outputs/`:
 - Generates answers only from retrieved chunks.
 - Preserves only validated citations in final results.
 - Downgrades unsupported answered outputs to `insufficient_evidence`.
+- Writes optional support signals using simple score-gap and status heuristics.
 
 ## Limitations
 
 - Answer generation is heuristic and extractive.
 - Retrieval is keyword-based and may miss semantic matches.
 - Citation validation uses lexical overlap, not deep entailment.
+- Support signals are heuristics, not calibrated probabilities.
 - The pipeline is designed for small local policy fixtures.
