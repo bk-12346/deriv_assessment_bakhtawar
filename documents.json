@@ -1,0 +1,27 @@
+[
+    {
+      "doc_id": "policy_001",
+      "title": "Password Reset Policy",
+      "text": "Users who forget their password must verify their identity using their registered email address and a one-time verification code. Support agents must not manually disclose or reset passwords without successful identity verification. Password reset links expire after 15 minutes. If a user no longer has access to their registered email, the case must be escalated to Account Security."
+    },
+    {
+      "doc_id": "policy_002",
+      "title": "Refund Handling Procedure",
+      "text": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date. If duplicate payment is confirmed internally, Billing Operations may approve a refund to the original payment method. Chargeback threats must be escalated immediately to the Risk and Payments team."
+    },
+    {
+      "doc_id": "policy_003",
+      "title": "Document Upload Troubleshooting",
+      "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+    },
+    {
+      "doc_id": "policy_004",
+      "title": "Account Closure Requests",
+      "text": "Users may request account closure through support. Before closure, support must confirm whether any balance remains and whether ongoing investigations or compliance restrictions apply. If funds remain, the user should be guided to complete a withdrawal through the standard withdrawal flow before closure is finalised."
+    },
+    {
+      "doc_id": "policy_005",
+      "title": "Jurisdiction and Product Availability",
+      "text": "Product availability varies by jurisdiction and account type. Support agents must not guess availability for a country unless the latest approved policy explicitly covers it. If the answer is not present in current documentation, the case should be routed to Compliance Operations for confirmation."
+    }
+  ]  

@@ -1,0 +1,57 @@
+[
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 1,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_001"
+    ]
+  },
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 2,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_002"
+    ]
+  },
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 3,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_003"
+    ]
+  },
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 4,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_005",
+      "policy_002"
+    ]
+  },
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 5,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_002"
+    ]
+  },
+  {
+    "citation_validation_passed": true,
+    "notes": "Citations are retrieved and lexically supported.",
+    "question_id": 6,
+    "unsupported_claims": [],
+    "validated_citations": [
+      "policy_003"
+    ]
+  }
+]

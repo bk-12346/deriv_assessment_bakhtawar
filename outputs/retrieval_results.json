@@ -1,0 +1,146 @@
+[
+  {
+    "question": "A user lost access to their registered email and cannot reset their password. What should support do?",
+    "question_id": 1,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_001_chunk_1",
+        "doc_id": "policy_001",
+        "score": 0.6749495381382693,
+        "text": "Users who forget their password must verify their identity using their registered email address and a one-time verification code. Support agents must not manually disclose or reset passwords without successful identity verification. Password reset links expire after 15 minutes. If a user no longer has access to their registered email, the case must be escalated to Account Security."
+      },
+      {
+        "chunk_id": "policy_004_chunk_1",
+        "doc_id": "policy_004",
+        "score": 0.10982103267908838,
+        "text": "Users may request account closure through support. Before closure, support must confirm whether any balance remains and whether ongoing investigations or compliance restrictions apply. If funds remain, the user should be guided to complete a withdrawal through the standard withdrawal flow before closure is finalised."
+      },
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.10187437207201576,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      }
+    ]
+  },
+  {
+    "question": "Can an agent promise that a refund will be completed within 24 hours?",
+    "question_id": 2,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_002_chunk_1",
+        "doc_id": "policy_002",
+        "score": 0.3375189716119324,
+        "text": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date. If duplicate payment is confirmed internally, Billing Operations may approve a refund to the original payment method. Chargeback threats must be escalated immediately to the Risk and Payments team."
+      },
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.0655329235435721,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      },
+      {
+        "chunk_id": "policy_001_chunk_1",
+        "doc_id": "policy_001",
+        "score": 0.0509307921713424,
+        "text": "Users who forget their password must verify their identity using their registered email address and a one-time verification code. Support agents must not manually disclose or reset passwords without successful identity verification. Password reset links expire after 15 minutes. If a user no longer has access to their registered email, the case must be escalated to Account Security."
+      }
+    ]
+  },
+  {
+    "question": "A customer says Safari upload keeps failing. What steps should be suggested first?",
+    "question_id": 3,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.4255646837203224,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      },
+      {
+        "chunk_id": "policy_005_chunk_1",
+        "doc_id": "policy_005",
+        "score": 0.07528814676901661,
+        "text": "Product availability varies by jurisdiction and account type. Support agents must not guess availability for a country unless the latest approved policy explicitly covers it. If the answer is not present in current documentation, the case should be routed to Compliance Operations for confirmation."
+      },
+      {
+        "chunk_id": "policy_004_chunk_1",
+        "doc_id": "policy_004",
+        "score": 0.06521192841473118,
+        "text": "Users may request account closure through support. Before closure, support must confirm whether any balance remains and whether ongoing investigations or compliance restrictions apply. If funds remain, the user should be guided to complete a withdrawal through the standard withdrawal flow before closure is finalised."
+      }
+    ]
+  },
+  {
+    "question": "Is a specific trading product available in Brazil?",
+    "question_id": 4,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_005_chunk_1",
+        "doc_id": "policy_005",
+        "score": 0.2417240004750935,
+        "text": "Product availability varies by jurisdiction and account type. Support agents must not guess availability for a country unless the latest approved policy explicitly covers it. If the answer is not present in current documentation, the case should be routed to Compliance Operations for confirmation."
+      },
+      {
+        "chunk_id": "policy_002_chunk_1",
+        "doc_id": "policy_002",
+        "score": 0.11523816655126025,
+        "text": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date. If duplicate payment is confirmed internally, Billing Operations may approve a refund to the original payment method. Chargeback threats must be escalated immediately to the Risk and Payments team."
+      },
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.09131278672746991,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      }
+    ]
+  },
+  {
+    "question": "What team should handle an immediate chargeback threat?",
+    "question_id": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_002_chunk_1",
+        "doc_id": "policy_002",
+        "score": 0.25937944340357755,
+        "text": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date. If duplicate payment is confirmed internally, Billing Operations may approve a refund to the original payment method. Chargeback threats must be escalated immediately to the Risk and Payments team."
+      },
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.08639817740794119,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      },
+      {
+        "chunk_id": "policy_005_chunk_1",
+        "doc_id": "policy_005",
+        "score": 0.04723029436521042,
+        "text": "Product availability varies by jurisdiction and account type. Support agents must not guess availability for a country unless the latest approved policy explicitly covers it. If the answer is not present in current documentation, the case should be routed to Compliance Operations for confirmation."
+      }
+    ]
+  },
+  {
+    "question": "What is the maximum upload size for documents?",
+    "question_id": 6,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "policy_003_chunk_1",
+        "doc_id": "policy_003",
+        "score": 0.2843718441107274,
+        "text": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Files above 10 MB are rejected. Accepted formats are PDF, JPG, and PNG. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing."
+      },
+      {
+        "chunk_id": "policy_005_chunk_1",
+        "doc_id": "policy_005",
+        "score": 0.26267779163800875,
+        "text": "Product availability varies by jurisdiction and account type. Support agents must not guess availability for a country unless the latest approved policy explicitly covers it. If the answer is not present in current documentation, the case should be routed to Compliance Operations for confirmation."
+      },
+      {
+        "chunk_id": "policy_002_chunk_1",
+        "doc_id": "policy_002",
+        "score": 0.12034079335542912,
+        "text": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date. If duplicate payment is confirmed internally, Billing Operations may approve a refund to the original payment method. Chargeback threats must be escalated immediately to the Risk and Payments team."
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "answered_count": 5,
+  "citation_validation_failure_count": 0,
+  "expected_behavior_comparison": {
+    "answerable_as_answered": 5,
+    "answerable_not_answered": 0,
+    "insufficient_evidence_as_answered": 0,
+    "insufficient_evidence_not_answered": 1,
+    "unknown_expected_behavior": 0
+  },
+  "insufficient_evidence_count": 1,
+  "routing_action_distribution": {
+    "account_security": 1,
+    "billing_operations": 1,
+    "compliance_operations": 1,
+    "frontend_investigation": 1,
+    "none": 1,
+    "risk_and_payments": 1
+  },
+  "support_rating_distribution": {
+    "none": 1,
+    "partial": 4,
+    "strong": 1
+  },
+  "total_questions": 6
+}

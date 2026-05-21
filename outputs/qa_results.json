@@ -1,0 +1,75 @@
+[
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "If a user no longer has access to their registered email, the case must be escalated to Account Security. Users who forget their password must verify their identity using their registered email address and a one-time verification code.",
+    "final_citations": [
+      "policy_001"
+    ],
+    "final_status": "answered",
+    "question_id": 1,
+    "routing_action": "account_security",
+    "support_rating": "strong"
+  },
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date.",
+    "final_citations": [
+      "policy_002"
+    ],
+    "final_status": "answered",
+    "question_id": 2,
+    "routing_action": "billing_operations",
+    "support_rating": "partial"
+  },
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing.",
+    "final_citations": [
+      "policy_003"
+    ],
+    "final_status": "answered",
+    "question_id": 3,
+    "routing_action": "frontend_investigation",
+    "support_rating": "partial"
+  },
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "",
+    "final_citations": [
+      "policy_005",
+      "policy_002"
+    ],
+    "final_status": "insufficient_evidence",
+    "question_id": 4,
+    "routing_action": "compliance_operations",
+    "support_rating": "none"
+  },
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "Chargeback threats must be escalated immediately to the Risk and Payments team. Refund requests must be reviewed by the Billing Operations team.",
+    "final_citations": [
+      "policy_002"
+    ],
+    "final_status": "answered",
+    "question_id": 5,
+    "routing_action": "risk_and_payments",
+    "support_rating": "partial"
+  },
+  {
+    "citation_validation_passed": true,
+    "fallback_applied": false,
+    "final_answer": "Files above 10 MB are rejected. If file upload fails, the user should first retry using a supported browser version and a stable network connection.",
+    "final_citations": [
+      "policy_003"
+    ],
+    "final_status": "answered",
+    "question_id": 6,
+    "routing_action": "none",
+    "support_rating": "partial"
+  }
+]

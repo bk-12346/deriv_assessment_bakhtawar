@@ -1,0 +1,33 @@
+[
+    {
+      "question_id": 1,
+      "question": "A user lost access to their registered email and cannot reset their password. What should support do?",
+      "expected_behavior": "answerable"
+    },
+    {
+      "question_id": 2,
+      "question": "Can an agent promise that a refund will be completed within 24 hours?",
+      "expected_behavior": "answerable"
+    },
+    {
+      "question_id": 3,
+      "question": "A customer says Safari upload keeps failing. What steps should be suggested first?",
+      "expected_behavior": "answerable"
+    },
+    {
+      "question_id": 4,
+      "question": "Is a specific trading product available in Brazil?",
+      "expected_behavior": "insufficient_evidence"
+    },
+    {
+      "question_id": 5,
+      "question": "What team should handle an immediate chargeback threat?",
+      "expected_behavior": "answerable"
+    },
+    {
+      "question_id": 6,
+      "question": "What is the maximum upload size for documents?",
+      "expected_behavior": "answerable"
+    }
+  ]
+  

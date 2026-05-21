@@ -1,0 +1,70 @@
+[
+  {
+    "answer": "If a user no longer has access to their registered email, the case must be escalated to Account Security. Users who forget their password must verify their identity using their registered email address and a one-time verification code.",
+    "citations": [
+      "policy_001"
+    ],
+    "question": "A user lost access to their registered email and cannot reset their password. What should support do?",
+    "question_id": 1,
+    "route_action": "account_security",
+    "status": "answered",
+    "support_rating": "strong"
+  },
+  {
+    "answer": "Refund requests must be reviewed by the Billing Operations team. Agents may acknowledge the request but must not promise approval or a specific completion date.",
+    "citations": [
+      "policy_002"
+    ],
+    "question": "Can an agent promise that a refund will be completed within 24 hours?",
+    "question_id": 2,
+    "route_action": "billing_operations",
+    "status": "answered",
+    "support_rating": "partial"
+  },
+  {
+    "answer": "If file upload fails, the user should first retry using a supported browser version and a stable network connection. Safari-specific upload failures should be logged for frontend investigation if reproducible after cache clearing.",
+    "citations": [
+      "policy_003"
+    ],
+    "question": "A customer says Safari upload keeps failing. What steps should be suggested first?",
+    "question_id": 3,
+    "route_action": "frontend_investigation",
+    "status": "answered",
+    "support_rating": "partial"
+  },
+  {
+    "answer": "",
+    "citations": [
+      "policy_005",
+      "policy_002"
+    ],
+    "question": "Is a specific trading product available in Brazil?",
+    "question_id": 4,
+    "reason": "Retrieved evidence was weak or did not clearly answer the question.",
+    "route_action": "compliance_operations",
+    "status": "insufficient_evidence",
+    "support_rating": "none"
+  },
+  {
+    "answer": "Chargeback threats must be escalated immediately to the Risk and Payments team. Refund requests must be reviewed by the Billing Operations team.",
+    "citations": [
+      "policy_002"
+    ],
+    "question": "What team should handle an immediate chargeback threat?",
+    "question_id": 5,
+    "route_action": "risk_and_payments",
+    "status": "answered",
+    "support_rating": "partial"
+  },
+  {
+    "answer": "Files above 10 MB are rejected. If file upload fails, the user should first retry using a supported browser version and a stable network connection.",
+    "citations": [
+      "policy_003"
+    ],
+    "question": "What is the maximum upload size for documents?",
+    "question_id": 6,
+    "route_action": "none",
+    "status": "answered",
+    "support_rating": "partial"
+  }
+]
